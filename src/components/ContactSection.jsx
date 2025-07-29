@@ -17,7 +17,7 @@ const ContactSection = () => {
           </p>
         </div>
         
-        <div className="grid md:grid-cols-3 gap-8 mb-12">
+        <div className="grid grid-cols-3 gap-6 mb-12 max-w-6xl mx-auto">
           {[
             { href: "https://github.com/BHOGESH4I9", icon: Github, label: "GitHub", gradient: "from-purple-500/20 to-pink-500/20", hoverColor: "hover:shadow-purple-400/25" },
             { href: "https://www.linkedin.com/in/bhogesh-vura-40588a247/", icon: Linkedin, label: "LinkedIn", gradient: "from-blue-500/20 to-cyan-500/20", hoverColor: "hover:shadow-blue-400/25" },
@@ -28,17 +28,17 @@ const ContactSection = () => {
               href={href}
               target="_blank"
               rel="noopener noreferrer"
-              className={`group flex flex-col items-center p-8 bg-gradient-to-br ${gradient} backdrop-blur-sm rounded-xl border border-gray-600/30 hover:border-cyan-400/50 transition-all duration-300 hover:scale-105 hover:shadow-xl ${hoverColor}`}
+              className={`group flex flex-col items-center px-4 py-3 text-center bg-gradient-to-br ${gradient} rounded-lg border border-gray-600/30 hover:border-cyan-400/50 transition-all duration-300 hover:scale-105 hover:shadow-xl ${hoverColor}`}
             >
-              <Icon className="w-12 h-12 mb-4 group-hover:scale-110 transition-transform duration-300 group-hover:text-cyan-400" />
-              <span className="text-lg font-semibold font-mono">{label}</span>
+              <Icon className="w-10 h-8 mb-3 group-hover:scale-110 transition-transform duration-300 group-hover:text-cyan-400" />
+              {/* <span className="text-sm font-semibold font-mono">{label}</span> */}
             </a>
           ))}
         </div>
         
         <div className="text-center text-gray-400 font-mono">
           <p>
-            <span className="text-cyan-400">©</span> 2024 Bhogesh Vura. 
+            <span className="text-cyan-400">©</span> 2025 Bhogesh Vura. 
             <span className="text-purple-400 mx-2">•</span>
             Built with <span className="text-red-400 animate-pulse">♥</span> using React & Tailwind CSS
           </p>
