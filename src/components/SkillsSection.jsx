@@ -3,55 +3,51 @@ import { Code } from 'lucide-react';
 
 const SkillsSection = () => {
   const skills = [
-    { name: 'React.js', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg', level: 'Expert' },
-    { name: 'JavaScript', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg', level: 'Expert' },
-    { name: 'Java', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg', level: 'Advanced' },
-    { name: 'Spring Boot', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/spring/spring-original.svg', level: 'Advanced' },
-    { name: 'Node.js', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg', level: 'Intermediate' },
-    { name: 'MySQL', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg', level: 'Advanced' },
-    { name: 'Firebase', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/firebase/firebase-plain.svg', level: 'Intermediate' },
-    { name: 'Docker', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg', level: 'Intermediate' },
-    { name: 'Git', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg', level: 'Advanced' },
-    { name: 'HTML5', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg', level: 'Expert' },
-    { name: 'CSS3', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg', level: 'Expert' },
-    { name: 'Tailwind CSS', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-plain.svg', level: 'Advanced' },
-    { name: 'Vite', icon: 'https://vitejs.dev/logo.svg', level: 'Intermediate' },
-    { name: 'Bootstrap', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg', level: 'Advanced' },
-    { name: 'REST APIs', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg', level: 'Advanced' }
+    { name: 'React.js', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg' },
+    { name: 'JavaScript', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg' },
+    { name: 'Java', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg' },
+    { name: 'Spring Boot', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/spring/spring-original.svg' },
+    { name: 'MySQL', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg' },
+    { name: 'Firebase', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/firebase/firebase-plain.svg' },
+    { name: 'Docker', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg' },
+    { name: 'Git', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg' },
+    { name: 'HTML5', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg' },
+    { name: 'CSS3', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg' },
+    { name: 'Tailwind CSS', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-plain.svg' },
+    { name: 'Vite', icon: 'https://vitejs.dev/logo.svg' },
+    { name: 'Bootstrap', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg' },
+    { name: 'REST APIs', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg' }
   ];
 
+
   return (
-    <section id="skills" className="py-20 px-6 relative z-10">
+    <section id="skills" className="py-16 px-4 sm:px-6 relative z-10">
       <div className="max-w-7xl mx-auto">
-        <h2 className="text-5xl md:text-6xl font-bold text-center mb-16 font-mono">
+        <h2 className="text-4xl sm:text-5xl font-bold text-center mb-12 font-mono">
           <span className="text-cyan-400">&lt;</span>
           <span className="bg-gradient-to-r from-cyan-400 via-blue-400 to-purple-400 bg-clip-text text-transparent">Skills</span>
           <span className="text-cyan-400">/&gt;</span>
         </h2>
-        
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+
+        {/* Responsive icon grid */}
+        <div className="grid grid-cols-4 sm:grid-cols-5 md:grid-cols-6 lg:grid-cols-8 gap-4 place-items-center">
           {skills.map((skill, index) => (
             <div
               key={skill.name}
-              className="group p-6 rounded-xl bg-gradient-to-br from-gray-800/50 to-gray-700/50 backdrop-blur-sm border border-gray-600/30 hover:border-cyan-400/50 transition-all duration-500 hover:scale-105 hover:shadow-xl hover:shadow-cyan-400/20"
-              style={{ animationDelay: `${index * 100}ms` }}
+              className="w-20 h-20 sm:w-24 sm:h-24 flex items-center justify-center rounded-full bg-gray-800/50 border border-gray-600/30 hover:border-cyan-400/50 transition-all duration-300 hover:scale-110 hover:shadow-md hover:shadow-cyan-400/30"
             >
-              <div className="flex items-center justify-center w-16 h-16 mx-auto mb-4 bg-gradient-to-br from-gray-700/50 to-gray-600/50 rounded-full group-hover:scale-110 transition-transform duration-300 border border-gray-500/30 group-hover:border-cyan-400/50">
-                <img 
-                  src={skill.icon} 
-                  alt={skill.name} 
-                  className="w-10 h-10 object-contain"
-                  onError={(e) => {
-                    e.target.style.display = 'none';
-                    e.target.nextElementSibling.style.display = 'block';
-                  }}
-                />
-                <div className="w-10 h-10 bg-gradient-to-br from-cyan-500 to-blue-600 rounded-full hidden flex items-center justify-center">
-                  <Code className="w-6 h-6 text-white" />
-                </div>
+              <img 
+                src={skill.icon} 
+                alt={skill.name}
+                className="w-12 h-12 sm:w-14 sm:h-14 object-contain"
+                onError={(e) => {
+                  e.target.style.display = 'none';
+                  e.target.nextElementSibling.style.display = 'flex';
+                }}
+              />
+              <div className="w-12 h-12 sm:w-14 sm:h-14 bg-gradient-to-br from-cyan-500 to-blue-600 rounded-full hidden items-center justify-center">
+                <Code className="w-6 h-6 text-white" />
               </div>
-              <h3 className="text-lg font-semibold text-center mb-2 group-hover:text-cyan-400 transition-colors duration-300">{skill.name}</h3>
-              <p className="text-sm text-center text-gray-400 font-mono">{skill.level}</p>
             </div>
           ))}
         </div>
