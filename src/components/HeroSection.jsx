@@ -17,7 +17,7 @@ const HeroSection = ({ isLoaded, typedText }) => {
         <div className={`transition-all duration-1000 delay-500 ${isLoaded ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-0'}`}>
           <div className="mb-6 h-16 flex items-center justify-center">
             <span className="text-2xl md:text-3xl font-mono text-gray-300 mr-2">$</span>
-            <span className="text-2xl md:text-3xl font-mono text-emerald-400">who am i</span>
+            <span className="text-2xl md:text-3xl font-mono text-emerald-400">whoami</span>
             <span className="text-2xl md:text-3xl font-mono text-gray-300 mx-2">|</span>
             <span className="text-2xl md:text-3xl font-mono bg-gradient-to-r from-cyan-400 to-blue-400 bg-clip-text text-transparent">
               {typedText}
