@@ -60,7 +60,7 @@ const ProjectsSection = () => {
         "A powerful React-based Template Editor using Tiptap, allowing users to select templates, fill dynamic fields, and live-preview rich content. Features include image upload, tables, task lists, styling options, PDF export, and customizable formatting via an interactive toolbar.",
       tech: ["React.js", "BootStrap", "Local Storage", "React Tiptap Editor"],
       github: "https://github.com/BHOGESH4I9/Template-Editor",
-      live: "https://template-editor-git-main-bhogesh-vuras-projects.vercel.app/",
+      live: "https://template-editor-five.vercel.app/",
       gradient: "from-lime-400 via-green-500 to-emerald-600",
     },
     {
