@@ -10,7 +10,7 @@ import DataStrucute from '../assets/LinearDataStructre.jpg';
 const ProjectsSection = () => {
   const projects = [
     {
-      title: "Sales Savvy – E-Commerce Platform",
+      title: "Shopease E-Commerce Platform",
       image : ECommerce,
       description:
         "Engineered a scalable e-commerce app with React.js (Vite) frontend and Spring Boot backend, handling user authentication, product listing, and checkout processes. Integrated Razor pay for real-time payments and deployed using Docker.",
@@ -27,7 +27,7 @@ const ProjectsSection = () => {
       gradient: "from-emerald-400 via-green-500 to-teal-600",
     },
     {
-      title: "Real-Time Live Tracker",
+      title: "Employee Live Tracker",
       image: LiveLocationTracker,
       description:
         "Built a real-time location tracker using React.js and Firebase Realtime DB. Displays moving user/device locations on a live-updating map with role-based access and session tracking.",
@@ -44,7 +44,7 @@ const ProjectsSection = () => {
       gradient: "from-blue-400 via-sky-500 to-cyan-600",
     },
     {
-      title: "Real-Time Chat App",
+      title: "Chat Application",
       image: ChatApp,
       description:
         "Built a responsive real-time chat application using React.js and Firebase Firestore. Supports live messaging, authentication, chat rooms, and message history sync.",
