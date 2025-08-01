@@ -4,23 +4,23 @@ import { Code, Terminal, Zap } from 'lucide-react';
 const ExperienceSection = () => {
   const experience = [
     {
-      title: "React Intern",
+      title: "React Developer Intern",
       company: "Pranathi Software Services",
-      period: "June 2025 – Present",
+      period: "June 2025 - Present",
       description: "Developed responsive user interface components using React.js, which increased session time by 25% and improved engagement. Connected the frontend to Firebase and REST APIs, reducing data load time by 40% and supporting real-time updates.",
       icon: <Code className="w-6 h-6" />
     },
     {
       title: "Java Full Stack Intern",
       company: "KodNest",
-      period: "July 2024 – December 2024",
+      period: "July 2024 - December 2024",
       description: "Developed RESTful APIs using Spring Boot, enabling seamless data exchange for 3 full-stack applications and reducing API response times by 25%. Built interactive and responsive front-end interfaces using React.js, JavaScript (ES6+), HTML, and CSS.",
       icon: <Terminal className="w-6 h-6" />
     },
     {
       title: "Full Stack Developer",
       company: "Personal Projects",
-      period: "2023 – Present",
+      period: "2023 - Present",
       description: "Developed multiple full-stack applications including e-commerce platforms, streaming applications, and portfolio websites. Worked with modern technologies like React.js, Spring Boot, Firebase, and various databases to create scalable and responsive web applications.",
       icon: <Zap className="w-6 h-6" />
     }
